@@ -7,8 +7,8 @@
   <title>Parallax Template - Materialize</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
@@ -18,8 +18,6 @@
   <ul id="dropdown1" class="dropdown-content">
     <li><a href="#!">MountainBoard</a></li>
     <li><a href="#!">Snowboard</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
   </ul>
 
   <div class="navbar-fixed">
@@ -29,14 +27,13 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="./index.html">Home</a></li>
           <!-- Dropdown Trigger -->
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Start now<i
-                class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#">Galerie</a></li>
-          <li><a href="#">Articole</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Start now <i class="fas fa-chevron-down fa-sm"></i></a></li>
+          <li><a href="#contact">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#">Articles</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="fas fa-bars"></i> </a>
       </div>
     </nav>
   </div>
@@ -51,7 +48,7 @@
         <a href="mailto:lupu.alin@gmail.com"><span class="white-text email">lupu.alin@gmail.com</span></a>
       </div>
     </li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">First Link With Icon</a></li>
     <li><a href="#!">Second Link</a></li>
     <li>
       <div class="divider"></div>
@@ -69,8 +66,7 @@
             way. Experience the "flow state" with us !</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button"
-            class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a onclick="$('.tap-target').tapTarget('open')" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -87,7 +83,7 @@
       <div class="row">
         <div class="col s12 m4 hoverable">
           <div class="icon-block ">
-            <h2 class="center green-text"><i class="material-icons">security</i></h2>
+            <h2 class="center green-text"><i class="fas fa-user-shield"></i></h2>
             <h5 class="center">Safe</h5>
 
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
@@ -98,7 +94,7 @@
 
         <div class="col s12 m4 hoverable">
           <div class="icon-block">
-            <h2 class="center orange-text"><i class="material-icons">child_care</i></h2>
+            <h2 class="center orange-text"><i class="far fa-laugh-beam"></i></h2>
             <h5 class="center">Fun</h5>
 
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
@@ -109,7 +105,7 @@
 
         <div class="col s12 m4 hoverable">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">local_library</i></h2>
+            <h2 class="center brown-text"><<i class="fas fa-graduation-cap"></i></h2>
             <h5 class="center">Learning</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users
@@ -135,15 +131,32 @@
   </div>
 
   <div class="container">
-    <div class="section">
+    <div class="section" id="gallery">
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>About</h4>
-          <p class="left-align light">
-              Hello<br><br>
-              Sunt Alin Lupu, sunt din Brasov si sunt pasionat de sporturile extreme (snowboard, mountainboard, downhill, alpinism, parasutism). Am inceput sa ma dau cu placa din 2007, iar din decembrie 2009 sunt <strong>instructor autorizat de snowboard</strong>.</p>
+          <h3><i class="far fa-images"></i></h3>
+          <h4>Take a look here...</h4>
+          
+          <div class="carousel carousel-slider center">
+              <div class="carousel-item white-text" href="#one!">
+                <img class="responsive-img" src="./images/board_ice_lake.jpg">
+              </div>
+              <div class="carousel-item white-text" href="#two!">
+                  <img class="responsive-img" src="./images/board_landscape_2.jpg">
+              </div>
+              <div class="carousel-item white-text" href="#three!">
+                  <img class="responsive-img" src="./images/board_lanscape_ice2.jpg">
+              </div>
+              <div class="carousel-item white-text" href="#four!">
+                  <img class="responsive-img" src="./images/boards4.jpg">
+              </div>
+              <div class="carousel-item white-text" href="#five!">
+                  <img class="responsive-img" src="./images/people1.jpg">
+              </div>
+            </div>
+
+
         </div>
       </div>
 
@@ -162,23 +175,26 @@
     <div class="parallax"><img src="./images/solomon.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer teal" id="contact">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">About</h5>
-          <p class="grey-text text-lighten-4">Sunt Alin Lupu, sunt din Brasov si sunt pasionat de sporturile extreme (snowboard, mountainboard, downhill, alpinism, parasutism). Am inceput sa ma dau cu placa din 2007, iar din decembrie 2009 sunt instructor autorizat de snowboard.</p>
+
+          <h5 class="white-text">About Me</h5>
+          <p class="grey-text text-lighten-4">Ma numesc Alin, sunt din Brasov si sunt pasionat de sporturile extreme (snowboard, mountainboard, downhill, alpinism, parasutism). Am inceput sa ma dau cu placa din 2007, iar din decembrie 2009 sunt <strong>instructor autorizat de snowboard</strong>.</p>
 
 
         </div>
         <div class="col l6 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="https://www.facebook.com/FlowRidersBrasov/" target=_NEW><i class="material-icons">facebook</i></a></li>
-            <li><a class="white-text" href="https://m.me/FlowRidersBrasov" target=_NEW><i class="material-icons">add</i></a></li>
-            <li><a class="white-text" href="https://www.instagram.com/mbi_ro/" target=_NEW><i class="material-icons">add</i></a></li>
-            <li><a class="white-text" href="mailto:lupu.alin@gmail.com"><i class="material-icons">add</i>lupu.alin@gmail.com</a></li>
-            <li><a class="white-text" href="tel:+40726306206"><i class="material-icons">add</i>+40 726 306 206</a></li>
+            <li>
+              <a class="white-text btn-large" href="https://www.facebook.com/FlowRidersBrasov/" target=_NEW><i class="fab fa-facebook-f"></i></a>
+              <a class="white-text btn-large" href="https://m.me/FlowRidersBrasov" target=_NEW><i class="fab fa-facebook-messenger"></i></a>
+              <a class="white-text btn-large" href="https://www.instagram.com/mbi_ro/" target=_NEW><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><h6><a class="white-text" href="mailto:lupu.alin@gmail.com"><i class="far fa-envelope"></i> lupu.alin@gmail.com</a></h6></li>
+            <li><h6><a class="white-text" href="tel:+40726306206"><i class="fas fa-phone"></i> +40 726 306 206</a></h6></li>
           </ul>
         </div>
       </div>
@@ -190,6 +206,25 @@
     </div>
   </footer>
 
+  <!-- Element Showed -->
+  <div class="fixed-action-btn direction-top active" >
+  <a id="menu" class="waves-effect waves-light btn btn-floating btn-large teal darken-1" onclick="$('.tap-target').tapTarget('open')"><i class="fas fa-link"></i></a>
+</div>
+  <!-- Tap Target Structure -->
+  <div class="tap-target teal darken-1" data-target="menu">
+    <div class="tap-target-content">
+        <h5 class="white-text">&nbsp;&nbsp;&nbsp;Connect</h5>
+        <ul>
+          <li>
+            <a class="white-text btn-large" href="https://www.facebook.com/FlowRidersBrasov/" target=_NEW><i class="fab fa-facebook-f"></i></a>
+            <a class="white-text btn-large" href="https://m.me/FlowRidersBrasov" target=_NEW><i class="fab fa-facebook-messenger"></i></a>
+            <a class="white-text btn-large" href="https://www.instagram.com/mbi_ro/" target=_NEW><i class="fab fa-instagram"></i></a>
+          </li>
+          <li><h6><a class="white-text" href="mailto:lupu.alin@gmail.com"><i class="far fa-envelope"></i> lupu.alin@gmail.com</a></h6></li>
+          <li><h6><a class="white-text" href="tel:+40726306206"><i class="fas fa-phone"></i> +40 726 306 206</a></h6></li>
+        </ul>
+    </div>
+  </div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
