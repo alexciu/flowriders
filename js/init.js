@@ -12,6 +12,7 @@
     //   fullWidth: true,
     //   indicators: true,
     // });
+    $('.collapsible').collapsible();
     $('.carousel_slick ').slick({
       dots: true,
       infinite: true,
