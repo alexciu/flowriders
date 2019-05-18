@@ -84,7 +84,21 @@ body{
   /* Desktop */
   @media (min-width:980px) {}
   /* Mobile */
-  @media (max-width:480px) {}
+  @media (max-width:480px) {
+
+    .youtube:after{
+        content:"PLAY";
+        position:absolute;
+        top:70px;
+        left:70px;
+        width:100px;
+        height:40px;
+        background:rgba(38, 180, 174, 0.66);;
+        color:#ecf0f1;
+        line-height:40px;
+      }
+
+  }
   /* Tablet */
   @media (max-width:767px) {}
   @media (min-width:768px) and (max-width:979px) {}
