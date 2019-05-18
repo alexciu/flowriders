@@ -57,7 +57,7 @@ body{
     background:rgba(38, 180, 174, 0.66);
     text-align:center;
     line-height:250px;
-    font-family:'Racing Sans One', cursive;
+    /* font-family:'Racing Sans One', cursive; */
     color:transparent;
     -webkit-transition:all 0.8s ease;
     -moz-transition:all 0.8s ease;
