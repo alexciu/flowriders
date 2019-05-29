@@ -12,13 +12,24 @@
     left: 0;
     z-index: 9999;}
   
-    #cookies > p {
-      margin: 0 0 0px 0;
-      font-weight: bold;}
+    #cookies > div {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-weight: bold;
+    }
     
-    #cookies > p a {
+    #cookies > div a {
       color: #ffffff;
-      text-decoration: none;}
+      text-decoration: none;
+
+    }
+    #cookies > div a.btn-small {
+
+        margin: 0.4rem;
+      }
   
   #cookies.display {
     display: block;
