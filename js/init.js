@@ -13,14 +13,16 @@
     //   indicators: true,
     // });
     $('.collapsible').collapsible();
-    $('.carousel_slick ').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
-    });
+    
+    //$('.materialboxed').materialbox();
+    // $('.carousel_slick ').slick({
+    //   dots: true,
+    //   infinite: true,
+    //   autoplay: true,
+    //   speed: 300,
+    //   slidesToShow: 1,
+    //   adaptiveHeight: true
+    // });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

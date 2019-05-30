@@ -18,7 +18,7 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        font-weight: bold;
+        font-weight: 500;
     }
     
     #cookies > div a {
