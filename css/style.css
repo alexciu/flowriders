@@ -58,9 +58,10 @@ footer.page-footer {
 
 /* Logo icon */
 
-.brand-logo i {
-  font-size:1.75em;
-  line-height: unset;
+.brand-logo img {
+  /* font-size:1.75em;
+  line-height: unset; */
+  margin-top: .5rem;
 }
 
 /* Gallery style */
