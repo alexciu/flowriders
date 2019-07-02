@@ -75,11 +75,11 @@ footer.page-footer {
   /* Prevent vertical gaps */
   line-height: 1; 
   
-  -webkit-column-count: 4;
+  -webkit-column-count: 3;
   -webkit-column-gap:   1px;
-  -moz-column-count:    4;
+  -moz-column-count:    3;
   -moz-column-gap:      1px;
-  column-count:         4;
+  column-count:         3;
   column-gap:           1px;
 }
 
@@ -91,9 +91,9 @@ footer.page-footer {
 
 @media (max-width: 1200px) {
  #photos {
- -moz-column-count:    4;
- -webkit-column-count: 4;
- column-count:         4;
+ -moz-column-count:    3;
+ -webkit-column-count: 3;
+ column-count:         3;
  }
 }
 @media (max-width: 1000px) {
