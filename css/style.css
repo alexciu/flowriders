@@ -87,6 +87,10 @@ footer.page-footer {
  /* Just in case there are inline attributes */
  width: 100% !important;
  height: auto !important;
+ min-width: 50px;
+ min-height: 50px;
+ opacity: 0;
+ transition: opacity 2s;
 }
 
 @media (max-width: 1200px) {

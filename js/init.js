@@ -8,21 +8,7 @@
       coverTrigger : false
       });
     $('.tap-target').tapTarget();
-    // $('.carousel.carousel-slider').carousel({
-    //   fullWidth: true,
-    //   indicators: true,
-    // });
     $('.collapsible').collapsible();
     
-    //$('.materialboxed').materialbox();
-    // $('.carousel_slick ').slick({
-    //   dots: true,
-    //   infinite: true,
-    //   autoplay: true,
-    //   speed: 300,
-    //   slidesToShow: 1,
-    //   adaptiveHeight: true
-    // });
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
