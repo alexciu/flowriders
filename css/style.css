@@ -125,3 +125,7 @@ footer.page-footer {
 
 /* Media Queries */
 
+.people-say .collection, .people-say .collection .collection-item {
+  border:0px;
+}
+
